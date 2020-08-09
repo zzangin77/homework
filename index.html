@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- Webpage Title -->
+    <title>나홀로 쇼핑몰</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+    <!-- 구글폰트 -->
+<link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <style type="text/css">
+        * {
+font-family: 'Single Day', cursive;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        .img {
+            background-image: url(https://image.edaily.co.kr/images/Photo/files/NP/S/2020/04/PS20040100485.jpg);
+            background-size: cover;
+            border-radius: 40px;
+            padding-top: 100px;
+            background-position: center;
+            width: 500px;
+            height: 300px;
+        }
+
+        .info {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: deeppink;
+        }
+
+        h1, h5 {
+            display: inline;
+        }
+
+        .order {
+            text-align: center;
+            font
+        }
+
+    </style>
+
+    <script>
+        function sayHello() {
+            alert('주문이 완료되었습니다 ');
+        }
+
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="img"></div>
+    <div class="info">
+        <h1> 향수를 팝니다</h1>
+        <h5>가격: 64000원/개</h5>
+        <p>이 향수는 사실 특별한 힘을 가지고 있어요. 향수를 뿌리 소원을 빌면 짜자잔 뭐든지 이뤄지게 된답니다. 하나 사가세요! 장미향이 아주 좋아요</p>
+        <div class="order-box">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">주문자 이름</span>
+            </div>
+            <input type="text" class="form-control" id="order-name">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text">수량</label>
+            </div>
+            <select class="custom-select" id="order-count">
+                <option selected value=""> -- 수량을 선택하세요 --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">주소</span>
+            </div>
+            <input type="text" class="form-control" id="order-address">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">전화번호</span>
+            </div>
+            <input type="text" class="form-control" id="order-phone">
+        </div>
+        </div>
+        <div class="order">
+            <button onclick="sayHello()" type="button" class="btn btn-primary">주문하기</button>
+        </div>
+    </div>
+
+</body>
+</html>
